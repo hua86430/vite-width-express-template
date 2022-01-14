@@ -32,6 +32,6 @@
     "typescript": "^4.5.4"
   },
   "lint-staged": {
-    "*.ts": "npm run lint && npm run prettier-format && npm run test"
+    "*.ts": "npm run prettier-format && npm run lint && npm run test"
   }
 }
