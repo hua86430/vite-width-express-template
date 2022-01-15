@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest run",
-    "test:watch": "vitest",
+    "test:ci": "vitest run",
+    "test": "vitest",
     "dev": "vite",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "lint": "eslint . --ext .ts",
@@ -32,6 +32,6 @@
     "typescript": "^4.5.4"
   },
   "lint-staged": {
-    "*.ts": "npm run prettier-format && npm run lint && npm run test"
+    "*.ts": "npm run prettier-format && npm run lint && npm run test:ci"
   }
 }
